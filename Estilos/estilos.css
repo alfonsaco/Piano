@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/*ESTILOS PARA EL TECLADO*/
+.teclado {
+    width: 1000px;
+    height: 300px;
+}
+.teclas-blancas {
+    height: 100%;
+    width: 100%;
+    background-color: #969696;
+    display: flex;
+}
+.teclas-blancas > div {
+    height: 100%;
+    width: 100%;
+    box-sizing: content-box;
+    background-color: #fff;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2), inset -5px -5px 5px rgba(0,0,0,0.2), 2px 4px 10px rgba(0,0,0,0.5);
+    border: 1px solid rgb(146, 146, 146);
+    border-bottom: 10px solid rgb(146, 146, 146);
+}
