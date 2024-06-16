@@ -32,16 +32,17 @@ main {
     width: 100%;
     box-sizing: content-box;
     background-color: #fff;
-    background: linear-gradient(to bottom, #fff 85%, rgb(226, 226, 226));
-    box-shadow: inset -5px -5px 5px rgba(0,0,0,0.2), 2px 4px 10px rgba(0,0,0,0.3);
+    background: linear-gradient(to bottom, #fff 70%, rgb(199, 199, 199) 93%, #ffffff 97%);
+    box-shadow: inset -5px -2px 5px rgba(0,0,0,0.2), 2px 4px 10px rgba(0,0,0,0.3);
     border: 1px solid rgb(146, 146, 146);
-    border-bottom: 10px solid #cacaca;
+    border-bottom: 10px solid #DBDBDB;
 }
 .teclas-blancas > div:active {
     border-bottom: 1px solid rgb(146, 146, 146);
     transform: translateY(10px);
     box-shadow: 0;
-    box-shadow: inset 5px 0px 5px rgba(0,0,0,0.2), inset -5px -5px 5px rgba(0,0,0,0.2);
+    box-shadow: inset 5px 0px 5px rgba(0,0,0,0.2), inset 0px 0px 5px rgba(0,0,0,0.2);
+    background: #fff;
 }
 
 /*Teclas negras*/
@@ -73,7 +74,7 @@ main {
     pointer-events: all; /* Para activar la animación de la negras*/
 }
 .teclas-negras div > div:active {
-    transform: translateY(7px);
+    transform: translateY(6px);
     border-bottom: 1px solid #292929;
     background: #181818;
     box-shadow: none;
@@ -94,4 +95,20 @@ main {
 .teclas-negras-triples:nth-child(4) {
     position: relative;
     left: -84px;
+}
+
+/*Clases de CSS para vincularlas al JS*/
+.teclado .negras-activas { /*Agrego lo del .teclado para aumentar su especificidad, y no tener que andar poniendo !important*/
+    transform: translateY(6px);
+    border-bottom: 1px solid #292929;
+    background: #181818;
+    box-shadow: none;
+    pointer-events: all;
+}
+.teclado .blancas-activas { /*Agrego lo del .teclado para aumentar su especificidad, y no tener que andar poniendo !important*/
+    border-bottom: 1px solid rgb(146, 146, 146);
+    transform: translateY(10px);
+    box-shadow: 0;
+    box-shadow: inset 5px 0px 5px rgba(0,0,0,0.2), inset 0px 0px 5px rgba(0,0,0,0.2);
+    background: #fff;
 }
