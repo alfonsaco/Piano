@@ -14,7 +14,7 @@ main {
 }
 header {
     background-color: #fff;
-    color: #333333;
+    color: #3a3a3a;
     width: 100%;
     height: 70px;
     display: flex;
@@ -27,32 +27,9 @@ header {
 
 
 /* ESTILOS PARA LOS BOTONES CON FUNCIONALIDADES */
-/* Botones para cambiar el piano */
-.div-botones-teclado {
-    width: 80%;
-    height: 650px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.div-botones-teclado > div {
-    border-radius: 100%;
-    border: solid grey 5px;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.7em;
-    color: grey;
-}
-.div-botones-teclado > div:hover {
-    border-color: rgb(172, 172, 172);
-    color: rgb(172, 172, 172);
-}
-
-
+/* Botón con el nombre de las teclas */
 #boton-guia {
+    margin-top: 600px;
     height: 50px;
     width: 150px;
     background-color: #fff;
