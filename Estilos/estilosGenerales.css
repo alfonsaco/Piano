@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    background-color: #eee;
+    background-color: #e4e4e4;
 }
 main {
     display: flex;
@@ -29,19 +29,30 @@ header {
 /* ESTILOS PARA LOS BOTONES CON FUNCIONALIDADES */
 .botones {
     display: flex;
-    margin-top: 600px;
+    margin-top: 550px;
     gap: 40px;
 }
 .botones button {
     height: 50px;
     width: 150px;
-    height: 50px;
+    height: 55px;
     width: 150px;
-    font-weight: bold;
-    background-color: #fff;
-    color: brown;
-    border: 3px solid brown;
-    outline: 2px solid #000;
+    font-family: 'Poppins';
+    font-size: 0.9em;
+    user-select: none;
+    background-color: #b34f4d;
+    color: #fff2db;
+    border: 5px solid #7f3245;
+    border-bottom-color: #5a2331;
+    border-top-color: #9c445a;
+    outline: 4px solid #000;
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.7);
+}
+.botones button:active {
+    background-color: #913f3d;
+    border: 5px solid #692939;
+    border-bottom-color: #491c27;
+    border-top-color: #7c3748;
 }
 /* Botón con el nombre de las teclas */
 #boton-guia {

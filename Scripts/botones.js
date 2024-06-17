@@ -1,7 +1,6 @@
 // Botón para mostrar teclas
 const botonGuia=document.getElementById("boton-guia");
 const elementosAfterBefore=document.querySelectorAll(".teclas-blancas div span, .teclas-negras div div span");
-console.log(elementosAfterBefore);
 
 // Función para mostrar y ocultar los nombres de las teclas
 elementosAfterBefore.forEach((elemento) => {

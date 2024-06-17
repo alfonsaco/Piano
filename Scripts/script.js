@@ -69,10 +69,25 @@ teclasBlancas.forEach((tecla)=> {
         reproducirSonido(tecla.getAttribute("data-audio"));
     })
 });
-
 const teclasNegras=document.querySelectorAll(".teclas-negras > div div");
 teclasNegras.forEach((tecla)=> {
     tecla.addEventListener("click", function() {
         reproducirSonido(tecla.getAttribute("data-audio"));
     })
 });
+
+
+// const botonGrabar=document.getElementById("boton-grabar");
+// botonGrabar.addEventListener("click", function(event) {
+//     let estado=true;
+//     let cadena="";
+//     if(estado != false) {
+//         cadena+=event.key+" ";
+
+//         botonGrabar.addEventListener("click", function() {
+//             estado=false;
+//         })
+//     }
+//     console.log(cadena);
+// })
+
