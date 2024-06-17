@@ -50,10 +50,10 @@
     background-color: #181818;
     background: linear-gradient(to bottom, #181818 98.5%, #b4b4b4);
     height: 100%;
-    width: 40px;
-    margin: 0px 10.5px;
-    border: 1px solid #292929;
-    border-bottom: 7px solid #181818;
+    width: 29px;
+    margin: 0px 12px;
+    border: 4px solid #292929;
+    border-bottom: 9px solid #181818;
     box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
     border-radius: 3px;
     pointer-events: all; /* Para activar la animación de la negras*/
@@ -61,7 +61,7 @@
     justify-content: center;
 }
 .teclas-negras div > div:active {
-    transform: translateY(6px);
+    transform: translateY(8px);
     border-bottom: 1px solid #292929;
     background: #181818;
     box-shadow: none;
@@ -72,16 +72,16 @@
 }
 .teclas-negras-dobles:nth-child(3) {
     position: relative;
-    left: -50px;
+    left: -48px;
 }
 
 .teclas-negras-triples {
     position: relative;
-    left: -35px;
+    left: -38px;
 }
 .teclas-negras-triples:nth-child(4) {
     position: relative;
-    left: -84px;
+    left: -86px;
 }
 
 /*Clases de CSS para vincularlas al JS*/

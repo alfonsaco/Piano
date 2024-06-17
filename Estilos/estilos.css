@@ -27,16 +27,25 @@ header {
 
 
 /* ESTILOS PARA LOS BOTONES CON FUNCIONALIDADES */
-/* Botón con el nombre de las teclas */
-#boton-guia {
+.botones {
+    display: flex;
     margin-top: 600px;
+    gap: 40px;
+}
+.botones button {
     height: 50px;
     width: 150px;
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
     background-color: #fff;
     color: brown;
-    font-weight: bold;
     border: 3px solid brown;
     outline: 2px solid #000;
+}
+/* Botón con el nombre de las teclas */
+#boton-guia {
+    
 }
 .teclado .mostrar-teclas {
     visibility: visible;
