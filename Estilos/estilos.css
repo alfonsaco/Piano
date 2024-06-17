@@ -128,9 +128,11 @@ main {
     top: 230px;
     font-size: 1.1em;
     height: 30px;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.1s ease;
 }
-.teclas-negras div div::before {
+.teclas-negras div div span {
     content: attr(data-nota);
     color: brown;
     font-family: sans-serif;
@@ -140,11 +142,14 @@ main {
     font-size: 1.2em;
     height: 30px;
     top: -60px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.1s ease;
 }
-.mostrar-teclas {
-    display: block;
+.teclado .mostrar-teclas {
+    visibility: visible;
+    opacity: 1;
 }
-
 
 /* ESTILOS PARA LOS BOTONES CON FUNCIONALIDADES */
 #boton-guia {
