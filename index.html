@@ -4,51 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos/estilos.css" type="text/css">
+    <link rel="shortcut icon" href="Imagenes/Icono.png">
     <title>Piano Virtual</title>
 </head>
 <body>
     <main>
         <div class="teclado">
             <div class="teclas-blancas">
-                <div id="c1" data-audio="../Notas/C1.wav"></div>
-                <div id="d1" data-audio="../Notas/D1.wav"></div>
-                <div id="e1" data-audio="../Notas/E1.wav"></div>
-                <div id="f1" data-audio="../Notas/F1.wav"></div>
-                <div id="g1" data-audio="../Notas/G1.wav"></div>
-                <div id="a1" data-audio="../Notas/A1.wav"></div>
-                <div id="b1" data-audio="../Notas/B1.wav"></div>
-                <div id="c2" data-audio="../Notas/C2.wav"></div>
-                <div id="d2" data-audio="../Notas/D2.wav"></div>
-                <div id="e2" data-audio="../Notas/E2.wav"></div>
-                <div id="f2" data-audio="../Notas/F2.wav"></div>
-                <div id="g2" data-audio="../Notas/G2.wav"></div>
-                <div id="a2" data-audio="../Notas/A2.wav"></div>
-                <div id="b2" data-audio="../Notas/B2.wav"></div>
-                <div id="c3" data-audio="../Notas/C3.wav"></div>
+                <div id="c1" data-audio="../Notas/C1.wav"><span>C1 (A)</span></div>
+                <div id="d1" data-audio="../Notas/D1.wav"><span>D1 (S)</span></div>
+                <div id="e1" data-audio="../Notas/E1.wav"><span>E1 (D)</span></div>
+                <div id="f1" data-audio="../Notas/F1.wav"><span>F1 (F)</span></div>
+                <div id="g1" data-audio="../Notas/G1.wav"><span>G1 (G)</span></div>
+                <div id="a1" data-audio="../Notas/A1.wav"><span>A1 (H)</span></div>
+                <div id="b1" data-audio="../Notas/B1.wav"><span>B1 (J)</span></div>
+                <div id="c2" data-audio="../Notas/C2.wav"><span>C2 (K)</span></div>
+                <div id="d2" data-audio="../Notas/D2.wav"><span>D2 (L)</span></div>
+                <div id="e2" data-audio="../Notas/E2.wav"><span>E2 (B)</span></div>
+                <div id="f2" data-audio="../Notas/F2.wav"><span>F2 (N)</span></div>
+                <div id="g2" data-audio="../Notas/G2.wav"><span>G2 (M)</span></div>
+                <div id="a2" data-audio="../Notas/A2.wav"><span>A2 (,)</span></div>
+                <div id="b2" data-audio="../Notas/B2.wav"><span>B2 (.)</span></div>
+                <div id="c3" data-audio="../Notas/C3.wav"><span>C3 (-)</span></div>
             </div>
             <div class="teclas-negras">
                 <div class="teclas-negras-dobles">
-                    <div id="c#1" data-audio="../Notas/Csharp1.wav"></div>
-                    <div id="d#1" data-audio="../Notas/Dsharp1.wav"></div>
+                    <div id="c#1" data-audio="../Notas/Csharp1.wav"><span>C#1 (Q)</span></div>
+                    <div id="d#1" data-audio="../Notas/Dsharp1.wav"><span>D#1 (W)</span></div>
                 </div>
                 <div class="teclas-negras-triples">
-                    <div id="f#1" data-audio="../Notas/Fsharp1.wav"></div>
-                    <div id="g#1" data-audio="../Notas/Gsharp1.wav"></div>
-                    <div id="a#1" data-audio="../Notas/Asharp1.wav"></div>
+                    <div id="f#1" data-audio="../Notas/Fsharp1.wav"><span>F#1 (E)</span></div>
+                    <div id="g#1" data-audio="../Notas/Gsharp1.wav"><span>G#1 (R)</span></div>
+                    <div id="a#1" data-audio="../Notas/Asharp1.wav"><span>A#1 (T)</span></div>
                 </div>
                 <div class="teclas-negras-dobles">
-                    <div id="c#2" data-audio="../Notas/Csharp2.wav"></div>
-                    <div id="d#2" data-audio="../Notas/Dsharp2.wav"></div>
+                    <div id="c#2" data-audio="../Notas/Csharp2.wav"><span>C#2 (Y)</span></div>
+                    <div id="d#2" data-audio="../Notas/Dsharp2.wav"><span>D#2 (U)</span></div>
                 </div>
                 <div class="teclas-negras-triples">
-                    <div id="f#2" data-audio="../Notas/Fsharp2.wav"></div>
-                    <div id="g#2" data-audio="../Notas/Gsharp2.wav"></div>
-                    <div id="a#2" data-audio="../Notas/Asharp2.wav"></div>
+                    <div id="f#2" data-audio="../Notas/Fsharp2.wav"><span>F#2 (I)</span></div>
+                    <div id="g#2" data-audio="../Notas/Gsharp2.wav"><span>G#2 (O)</span></div>
+                    <div id="a#2" data-audio="../Notas/Asharp2.wav"><span>A#2 (P)</span></div>
                 </div>
             </div>
+        </div>
+
+        <div>
+            <button id="boton-guia">MOSTRAR TECLAS</button>
         </div>
     </main>
 
     <script src="Scripts/script.js"></script>
+    <script src="Scripts/botones.js"></script>
 </body>
 </html>

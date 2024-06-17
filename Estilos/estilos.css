@@ -36,6 +36,8 @@ main {
     box-shadow: inset -5px -2px 5px rgba(0,0,0,0.2), 2px 4px 10px rgba(0,0,0,0.3);
     border: 1px solid rgb(146, 146, 146);
     border-bottom: 10px solid #DBDBDB;
+    display: flex;
+    justify-content: center;
 }
 .teclas-blancas > div:active {
     border-bottom: 1px solid rgb(146, 146, 146);
@@ -72,6 +74,8 @@ main {
     box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
     border-radius: 3px;
     pointer-events: all; /* Para activar la animación de la negras*/
+    display: flex;
+    justify-content: center;
 }
 .teclas-negras div > div:active {
     transform: translateY(6px);
@@ -111,4 +115,44 @@ main {
     box-shadow: 0;
     box-shadow: inset 5px 0px 5px rgba(0,0,0,0.2), inset 0px 0px 5px rgba(0,0,0,0.2);
     background: #fff;
+}
+
+/* Nombres de las teclas*/
+.teclas-blancas div span {
+    content: attr(data-nota);
+    color: brown;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    top: 230px;
+    font-size: 1.1em;
+    height: 30px;
+    display: none;
+}
+.teclas-negras div div::before {
+    content: attr(data-nota);
+    color: brown;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    font-size: 1.2em;
+    height: 30px;
+    top: -60px;
+}
+.mostrar-teclas {
+    display: block;
+}
+
+
+/* ESTILOS PARA LOS BOTONES CON FUNCIONALIDADES */
+#boton-guia {
+    margin-top: 500px;
+    padding: 10px;
+    background-color: #fff;
+    color: brown;
+    font-weight: bold;
+    border: 3px solid brown;
+    outline: 2px solid #000;
 }

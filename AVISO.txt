@@ -1,0 +1,1 @@
+Abrir el archivo con live server para que el sonido funcione, ya que de manera local no funciona.
