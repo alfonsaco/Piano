@@ -6,5 +6,10 @@ console.log(elementosAfterBefore);
 elementosAfterBefore.forEach((elemento) => {
     botonGuia.addEventListener("click", function() {
         elemento.classList.toggle("mostrar-teclas");
+        if(botonGuia.textContent.includes("MOSTRAR")){
+            botonGuia.textContent="OCULTAR TEXTO";
+        } else {
+            botonGuia.textContent="MOSTRAR TEXTO";
+        }
     })
 });
