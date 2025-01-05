@@ -1,31 +1,32 @@
 // Objeto que contiene todas las teclas, con su determinada ruta e id
-const infoTeclas={
-    "A" : {id: "c3", rutaSonido: "../Notas/C3.wav"},
-    "S" : {id: "d3", rutaSonido: "../Notas/D3.wav"},
-    "D" : {id: "e3", rutaSonido: "../Notas/E3.wav"},
-    "F" : {id: "f3", rutaSonido: "../Notas/F3.wav"},
-    "G" : {id: "g3", rutaSonido: "../Notas/G3.wav"},
-    "H" : {id: "a3", rutaSonido: "../Notas/A3.wav"},
-    "J" : {id: "b3", rutaSonido: "../Notas/B3.wav"},
-    "K" : {id: "c4", rutaSonido: "../Notas/C4.wav"},
-    "L" : {id: "d4", rutaSonido: "../Notas/D4.wav"},
-    "B" : {id: "e4", rutaSonido: "../Notas/E4.wav"},
-    "N" : {id: "f4", rutaSonido: "../Notas/F4.wav"},
-    "M" : {id: "g4", rutaSonido: "../Notas/G4.wav"},
-    "," : {id: "a4", rutaSonido: "../Notas/A4.wav"},
-    "." : {id: "b4", rutaSonido: "../Notas/B4.wav"},
-    "-" : {id: "c5", rutaSonido: "../Notas/C5.wav"},
-    "Q" : {id: "c#3", rutaSonido: "../Notas/Csharp3.wav"},
-    "W" : {id: "d#3", rutaSonido: "../Notas/Dsharp3.wav"},
-    "E" : {id: "f#3", rutaSonido: "../Notas/Fsharp3.wav"},
-    "R" : {id: "g#3", rutaSonido: "../Notas/Gsharp3.wav"},
-    "T" : {id: "a#3", rutaSonido: "../Notas/Asharp3.wav"},
-    "Y" : {id: "c#4", rutaSonido: "../Notas/Csharp4.wav"},
-    "U" : {id: "d#4", rutaSonido: "../Notas/Dsharp4.wav"},
-    "I" : {id: "f#4", rutaSonido: "../Notas/Fsharp4.wav"},
-    "O" : {id: "g#4", rutaSonido: "../Notas/Gsharp4.wav"},
-    "P" : {id: "a#4", rutaSonido: "../Notas/Asharp4.wav"}
+const infoTeclas = {
+    "A" : {id: "c3", rutaSonido: "/Piano/Notas/C3.wav"},
+    "S" : {id: "d3", rutaSonido: "/Piano/Notas/D3.wav"},
+    "D" : {id: "e3", rutaSonido: "/Piano/Notas/E3.wav"},
+    "F" : {id: "f3", rutaSonido: "/Piano/Notas/F3.wav"},
+    "G" : {id: "g3", rutaSonido: "/Piano/Notas/G3.wav"},
+    "H" : {id: "a3", rutaSonido: "/Piano/Notas/A3.wav"},
+    "J" : {id: "b3", rutaSonido: "/Piano/Notas/B3.wav"},
+    "K" : {id: "c4", rutaSonido: "/Piano/Notas/C4.wav"},
+    "L" : {id: "d4", rutaSonido: "/Piano/Notas/D4.wav"},
+    "B" : {id: "e4", rutaSonido: "/Piano/Notas/E4.wav"},
+    "N" : {id: "f4", rutaSonido: "/Piano/Notas/F4.wav"},
+    "M" : {id: "g4", rutaSonido: "/Piano/Notas/G4.wav"},
+    "," : {id: "a4", rutaSonido: "/Piano/Notas/A4.wav"},
+    "." : {id: "b4", rutaSonido: "/Piano/Notas/B4.wav"},
+    "-" : {id: "c5", rutaSonido: "/Piano/Notas/C5.wav"},
+    "Q" : {id: "c#3", rutaSonido: "/Piano/Notas/Csharp3.wav"},
+    "W" : {id: "d#3", rutaSonido: "/Piano/Notas/Dsharp3.wav"},
+    "E" : {id: "f#3", rutaSonido: "/Piano/Notas/Fsharp3.wav"},
+    "R" : {id: "g#3", rutaSonido: "/Piano/Notas/Gsharp3.wav"},
+    "T" : {id: "a#3", rutaSonido: "/Piano/Notas/Asharp3.wav"},
+    "Y" : {id: "c#4", rutaSonido: "/Piano/Notas/Csharp4.wav"},
+    "U" : {id: "d#4", rutaSonido: "/Piano/Notas/Dsharp4.wav"},
+    "I" : {id: "f#4", rutaSonido: "/Piano/Notas/Fsharp4.wav"},
+    "O" : {id: "g#4", rutaSonido: "/Piano/Notas/Gsharp4.wav"},
+    "P" : {id: "a#4", rutaSonido: "/Piano/Notas/Asharp4.wav"}
 };
+
 
 // Función para ejecutar el sonido
 function reproducirSonido(rutaSonido) {

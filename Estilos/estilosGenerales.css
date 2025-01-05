@@ -4,7 +4,7 @@
     padding: 0;
 }
 body {
-    background-color: #e4e4e4;
+    background-color: #d6d6d6;
 }
 main {
     display: flex;
@@ -14,15 +14,19 @@ main {
 }
 header {
     background-color: #fff;
-    color: #3a3a3a;
     width: 100%;
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    user-select: none;
+}
+header a {
+    text-decoration: none;
+    color: #3a3a3a;
     font-family: 'Poppins';
     font-weight: lighter;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
 }
 
 
@@ -43,21 +47,18 @@ header {
     background-color: #b34f4d;
     color: #fff2db;
     border: 5px solid #7f3245;
-    border-bottom-color: #5a2331;
-    border-top-color: #9c445a;
+    border-bottom: #5a2331 10px solid;
+    border-top: #9c445a solid 2px;
     outline: 4px solid #000;
-    box-shadow: 0px 6px 10px rgba(0,0,0,0.7);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.7);
 }
 .botones button:active {
-    background-color: #913f3d;
     border: 5px solid #692939;
     border-bottom-color: #491c27;
     border-top-color: #7c3748;
+    box-shadow: none;
 }
 /* Botón con el nombre de las teclas */
-#boton-guia {
-    
-}
 .teclado .mostrar-teclas {
     visibility: visible;
     opacity: 1;
