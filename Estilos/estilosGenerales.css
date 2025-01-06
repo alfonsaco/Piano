@@ -5,12 +5,15 @@
 }
 body {
     background-color: #d6d6d6;
+    min-height: 100vh;
 }
 main {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 60px;
+    height: calc(100vh - 70px);
 }
 header {
     background-color: #fff;
@@ -21,20 +24,21 @@ header {
     align-items: center;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
     user-select: none;
+    z-index: 100;
+    position: relative;
 }
 header > a {
     text-decoration: none;
     color: #3a3a3a;
     font-family: 'Poppins';
-    font-weight: lighter;
+    font-weight: 600;
+    font-size: 2em;
 }
 
 
 /* ESTILOS PARA LOS BOTONES CON FUNCIONALIDADES */
 .botones {
     display: flex;
-    margin-top: 550px;
-    gap: 40px;
 }
 .botones button {
     height: 50px;

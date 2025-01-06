@@ -2,7 +2,7 @@
 .teclado {
     width: 900px;
     height: 270px;
-    position: absolute;
+    position: relative;
 }
 /*Teclas blancas*/
 .teclas-blancas {
